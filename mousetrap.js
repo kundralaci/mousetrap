@@ -940,7 +940,12 @@
         /**
          * exposes _handleKey publicly so it can be overwritten by extensions
          */
-        handleKey: _handleKey
+        handleKey: _handleKey,
+
+        /**
+         * Laci's extension to make keycode --> string lookup possible
+         */
+        characterFromEvent: _characterFromEvent,
     };
 
     // expose mousetrap to the global object
